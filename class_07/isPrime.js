@@ -2,14 +2,14 @@ function isPrime(n){
   if(n < 2){
       return false
   }
-
-  for(let i = 2; i < n; i++){
+  //Math.sqrt(n) - makes more optimal
+  for(let i = 2; i < Math.sqrt(n); i++){
       if(n % i === 0){
           return false
       }
   }
 
-  return true
+  return true //Big-O = O(sqrt(n))
 }
 
 console.log(isPrime(1))

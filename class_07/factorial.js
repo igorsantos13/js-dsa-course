@@ -7,9 +7,8 @@ function factorial(n){
         result *= i;
     }
 
-    return result
+    return result //Big-O = O(n)
 }
-
 
 console.log(factorial(0))
 console.log(factorial(1))
